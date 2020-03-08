@@ -50,7 +50,7 @@ module.exports = function (options) {
         const m = scopedUrls[i].exec(pathname);
         if (m) {
           isScoped = true;
-          if (config.scopes.indexOf(m[1]) !== -1 && config.publicScopes.indexOf(m[1]) < 0) {
+          if (config.scopes.indexOf(m[1]) !== -1) {
             // internal scoped
             isPublichScoped = false;
           } else {
