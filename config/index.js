@@ -178,6 +178,10 @@ var config = {
   // registry scopes, if don't set, means do not support scopes
   scopes: [ '@cnpm', '@cnpmtest', '@cnpm-test' ],
 
+  // force public scopes
+  publicScopes: [], // ['@dcloudio']
+
+
   // some registry already have some private packages in global scope
   // but we want to treat them as scoped private packages,
   // so you can use this white list.
